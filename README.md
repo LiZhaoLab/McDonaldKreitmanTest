@@ -40,6 +40,7 @@
         `>dsim_0`  
     * after editing use prank to align the new MSA  
         `prank -F -codon -d=<new_MSA_file> -o=<any_output_name>`  
+    * Note when doing alignments, prank is super slow if you include population data. In this case, align only reference genomes, remove gaps in focal species, then append population data to the alignments.
 
 3. MK test using the aligned MSA  
     * Make sure that headers in this MSA are correct  
